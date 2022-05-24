@@ -1,0 +1,70 @@
+- What is Breadth-first search (BFS)?
+It is an algorithm to find the shortest distance between 2 nodes.
+%
+- What are the real-world use cases where we can use BFS?
+	. Writing AIs to calculate the fewest moves to victory in chess
+	. Spell checkers
+	. Find the closest doctor on your social network
+%
+- Describe the shortest-path problem.
+You are in point A, and must reach D with the minimum number of transfers (you have multiple branch paths available). First, you check on the next point of each branch if any of them goes directly to D. If not, you see the options available on the next branch of nodes if any goes to D. If not, you keep repeating until you reach node D.
+%
+- What algorithm can be used to solve the shortest-path problem?
+Breadth-first search (BFS).
+%
+- What is a graph?
+It is a data structure that models connections between nodes. The lines connecting the nodes are called "edges".
+%
+- What is the prerequisite to solve a problem with BFS?
+To model the problem as a graph.
+%
+- What questions can BFS answer?
+	. Is there a path from node A to node B?
+	. What is the shortest path from node A to node B?
+%
+- Suppose you want to know if you have a dentist on your social network. Describe the algorithm to do so.
+    	. SHORTEST VERSION:
+		. Search of first-degree connections, then second-degree connections, then third-degree connections and so on.
+	. LONGEST VERSION:
+		. Make a list of close friends
+		. Go to each friend on that list and check if s/he is a dentist.
+		. If not, for each one of them, check on his/her network if there is a dentist.
+		. If there is not a dentist on you friends friends' network, go to each one of them and check for each one of their friends also.
+%
+- If you need to search for people with BFS, you need to do so in the order that they are added. What data structure naturally supports that?
+Queue.
+%
+- How to you access random elements on a queue?
+That is NOT ALLOWED.
+%
+- What are the operations you can do on a queue?
+	. enqueue: add an item to the queue
+	. dequeue: remove an item from the queue
+%
+- What is the difference between queues and stacks?
+	. queue: FIFO data structure (First In, First Out)
+	. stack: LIFO data structure (Last In, First Out)
+%
+- What is LIFO? Which data structure works like that?
+	. Last-In, First-Out. Stack is LIFO.
+%
+- What is FIFO? Which data structure works like that?
+	. First-In, First-Out. Queue is FIFO.
+%
+- How do you avoid infinite loops on Breadth-first search?
+Once you search a node, you mark it as searched, adding it to a list.
+%
+- What is the data structure you use to make sure you check nodes in the order they were added to the search list, to get the shortest path?
+A queue.
+%
+- What is the Big-O notation for Breadth-first search?
+O(V+E): number of vertices (nodes) + number of edges.
+%
+- What is a directed graph?
+It is one that has arrows, and the relationships follow the arrows' direction.
+%
+- What is an undirected graph?
+It is one that does not have arrows, and the relationship goes both ways (to and from one node to another).
+%
+- Can a tree be considered a graph?
+Yes - it is a directed graph (the relationships' follow the arrows' direction).

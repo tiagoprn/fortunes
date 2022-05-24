@@ -1,0 +1,11 @@
+- What is selection sort?
+It is an algorithm to order elements. You have an original unordered array, and to order it you build a new one. You put elements on the new one iterating on the original, finding at each iteration the smallest number there, and putting the smallest element on the new array.
+%
+- What is the Big-O notation for selection sort?
+Since you have an unordered list with n elements, and you pass at each one of them n number of times, the Big O notation for this algorithm is: **O₍n x n)**, which is equal to **O₍n²₎** .
+%
+- Why is selection sort Big-O notation **O₍n²₎**, if at each pass through all the original array you remove the smallest element of it, and at the last step there is only one element?
+That is because Big-O notation only works with integer numbers. So, since there is no way to represent **n * 1/2n** , you have to round **1/2n** to **n**, getting **n * n**, which equals **n²**.
+%
+- Is Selection Sort the fastest sorting algorithm? If not, is there an example of a faster one?
+No, it is not. Quicksort is an example of a faster one.

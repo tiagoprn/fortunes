@@ -1,0 +1,59 @@
+- What is a hash function?
+It maps different keys to different slots in an array.
+%
+- What is a collision?
+It is when two or more keys are assigned to the same array slot/index.
+%
+- What is one of the ways to solve colisions?
+To start a linked list at the collision slot.
+%
+- What is the most appropriate size for a linked list inside a hash table?
+The smallest one possible, because large linked lists slow down a hash table.
+%
+- What makes a good hash function?
+	. Maps each key to a single slot/index on the array
+	. Distributes keys in the array evenly to avoid collisions when empty slot/indexes are available.
+	. If there are linked lists inside the array they are the smallest possible.
+%
+- What is the real meaning of O₍₁₎?
+It means constant time. It means the time to do an operation (search, insert or delete) will always take the same time.
+%
+- What is the Big-O notation average case on hash tables?
+O₍₁₎: For searching, as fast as arrays. For inserts and deletes, as fast as linked lists.
+%
+- What is the Big-O notation worst case on hash tables?
+O₍n₎: For searching, slower than  arrays. For inserts and deletes, slower than linked lists.
+%
+- What do you needd to avoid the worst case with hash tables?
+You need a low load factor and a good hash function.
+%
+- What is the load factor of a hash table?
+It is the proportion that elements are distributed on an array. It is calculated this way: `number-of-items-inside-the-array/length-of-the-array`.
+%
+- What is the load factor of an array with length=5, and 2 elements on the array?
+2/5 = 0.4.
+%
+- What is the load factor of an array with length=50, and 100 elements on the array?
+100/50 = 2.
+%
+- What is the resizing operation on a hash table?
+It is when you add more slots/indexes to the hash table.
+%
+- How do you resize a hash table?
+1) Create a bigger array (recommended double the size of the original)
+2) Re-inset the items in the new hash table using the hash function.
+%
+- What is the benefit of a low load factor?
+Fewer collisions, and the hash table will perform better.
+%
+- When it is recommended to resize a hash table to perform better?
+When the load factor gets greater than 0.7.
+%
+- What is the downside of too much resizing on a hash table?
+Resizing arrays can take lot of time. But, on average hash tables take O₍₁₎ even considering resizing.
+%
+- What is the example of a good hash function?
+SHA.
+%
+- What else are hash tables good for, besides storing elements?
+To model relationships between items.

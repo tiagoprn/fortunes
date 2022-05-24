@@ -1,0 +1,6 @@
+- What is the cost of usings stacks?
+Memory - taller the stack, higher the memory requirements are.
+%
+- What are 2 alternatives to overcome stacks memory drawback?
+1) Code rewriting using loops
+2) Using tail recursion.

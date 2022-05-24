@@ -1,0 +1,45 @@
+- Does recursion have performance benefits over e.g. loops?
+No. Even so that loops in some situations may be better for performance.
+%
+- Is there any benefit to using recursion?
+It may be the easiest and most readable (in code) solution for some problems.
+%
+- Which are the 2 cases/parts of a recursive function?
+The base case and the recursive case.
+%
+- What is the base case on a recursive function?
+It is the condition where to stop the recursion, to avoid infinite looping.
+%
+- What is the recursive case on a recursive function?
+It is the condition where a function calls itself.
+%
+- Suppose you need to iterate on something, but you are not allowed to use a for loop. What you could you use?
+A recursive function (which will need to have a base case).
+%
+- How does the data structure named "stack" works?
+It acts as a "pile". When you insert a new item, you insert at the top of the pile (push). When you remove an item, you remove it also from the top of the pile (pop).
+%
+- What is a "call stack"?
+A call stack is a pile of functions calls, where one function calls another. Every time you add a function to the pile, you add it with its' name and variables (names and values). When a function finishes its' execution, it is popped and we go back to the previous function, which now will be at the top of the pile.
+%
+- What happens when you call a function from another?
+The calling function is paused in a partially completed state, and its' variables are stored in memory.
+%
+- Explain each element on the call stack for the function below:
+``` python
+def greet(person):
+    print(f'Hello {person}!')
+    say_how_are_you(person)
+    print('Getting ready to say bye...')
+    bye()
+```
+. You add the `greet` function to the call stack with its' name and the variable `person` name and value.
+. Then, the `print` command is executed and the function is paused.
+. You add the `say_how_are_you` function to the call stack with its' name and the variable `person` name and value.
+. You run the `say_how_are_you` function and remove it from the call stack when finished.
+. The function `greet` is resumed, since it now is on the top of the stack.
+. The `print` command is executed and the `greet` function is paused again.
+. You add the `bye` function to the call stack.
+. You run the `bye` function and remove it from the call stack when finished.
+. The function `greet` is resumed, since it now is on the top of the stack.
+. Since the `greet` function has nothing more to do, it finishes and is also removed from the call stack.

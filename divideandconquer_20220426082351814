@@ -1,0 +1,21 @@
+- What is a recursive technique that can be used to solve problems?
+Divide-And-Conquer.
+%
+- What is an algorithm that makes use of the Divide-And-Conquer technique?
+Quicksort.
+%
+- What are the 2 steps of solving a problem with the Divide-And-Conquer technique?
+1) Figure out the base case (the simplest case)
+2) Divide or decrease the problem until you reach the base case.
+%
+- Is Divide-And-Conquer an algorithm?
+No. It is a way to think about a problem.
+%
+- When you have a recursive function that operates on an array, what is generally the base case?
+An empty array or an array with 1 element.
+%
+- On which language paradigm is recursion needed, since there are no loops?
+Functional programming.
+%
+- What is the name of a functional programming language (that leverages recursion)?
+Haskell.

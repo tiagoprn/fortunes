@@ -1,0 +1,27 @@
+- What is quicksort?
+Quicksort is a sorting algorithm, which uses a technique callend "divide-and-conquer". It is one of the fastest sorting algorithms, as its' name implies.
+%
+- What is the base case of the quicksort algorithm?
+Empty arrays and arrays with one element. On both situations, you only return the arrays, since there's nothing to be sorted.
+%
+- How does quicksort work?
+You choose an element from the array that will be the pivot. Then you create 2 sub-arrays: one with the numbers smaller than the pivot, and one with the ones larger than it. At each recursion, you return an array with: the array with the lesser elements, the pivot, and the array with the greater elements (on that order).
+%
+- What is inductive proof?
+It is a way to prove that an algorithm works. Each proof has a base case and an inductive case.
+%
+- What is the Big-O notation of quicksort: a) on the worst case, b) on the average case.
+a) O₍n²). It happens when you choose the first element as the pivot.
+b) O₍n log n). It happens when you choose any element that is not the first one as the pivot.
+%
+- On Big-O notation, what does "c" account for? When it is relevant?
+With notation like O₍n₎, the "n" part in fact means "c * n". "c" is a constant, that takes into account the amount of time an algorithm takes to run. That "c" constant is ignored when 2 algorithms have different Big-O times (because no matter its' value, it will be irrelevant). But it matters when 2 algorithms have the same Big-O time. E.g. Quicksort VS Mergesort - they are both O₍n log n₎, but in practice quicksort is faster because it hits the average case more often than the worst case.
+%
+- What determines the performance of quicksort?
+The pivot chosen. If it is the first element, it does not matter if the array is already sorted, it will try to sort it anyway - because it does not now the array is sorted. And also, using the first element as the pivot you do not have the benefit of starting with 2 sub-arrays - so your call stack will be the largest.
+%
+- What is the benefit of picking the middle element as the pivot with quicksort?
+Your call stack will be shorter - so, there will be less recursive calls. Then, you reach the base case sooner.
+%
+- How to consistently get the best case scenario of quicksort?
+Always choosing a random element as the pivot.

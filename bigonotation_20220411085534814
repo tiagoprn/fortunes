@@ -1,0 +1,23 @@
+- What is big-O notation?
+Big-O notation tells how fast an algorithm is. That is measured by the number of operations on the worst-case scenario.
+%
+- What are the common trade-offs on choosing an algorithms?
+Speed (how fast it is) and correctness (how easy it is to implement with less errors).
+%
+- What is the difference between simple search and binary search?
+Since simple search needs to search on all elements in the worst case, the bigger the list the more it will take to run. Binary search, otherwise, will only add a small amount of extra time for bigger lists.
+%
+- What do you need to know to choose wisely between algorithms?
+How long it takes to run and how much time increases when the list increases.
+%
+- What is the big-O notation for simple search algorithm?
+O₍n₎ - for a list with n elements, it will take "n" operations.
+%
+- What is the big-O notation for binary search algorithm?
+O₍log n₎ - for a list with n elements, it will take "log n" operations.
+%
+- What is the "traveling salesperson" problem?
+You have a salesperson that needs to go to x cities, traveling the minimum distance.
+%
+- What is the big-O notation for the "traveling salesperson" problem?
+O₍n!₎ - the slowest possible. It is one of the unresolved problems in computer science. The bigger the number of cities, higher the complexity.
