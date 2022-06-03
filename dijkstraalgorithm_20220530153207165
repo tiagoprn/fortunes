@@ -1,0 +1,42 @@
+- What is called the number associated with a graph's edge?
+The edge's weight.
+%
+- What is the difference between a weighted and an unweighted graph?
+A weighted graph has weight (a number) on its' edges. That number means a distance or a cost related to moving between the nodes. An unweighted graph does not have weight on its' edges.
+%
+- Regarding graph algorithms, how to choose between Bread-first search and Dijkstra algorithms?
+To find the path with the fewest nodes on an unweighted graph, you use Bread-first search. To find the shortest path on a weighted graph you use Dijkstra.
+%
+- Which are the 4 steps for the Dijkstra's algorithm?
+	. Find the node with the lesser weight
+	. Update the costs of the neighbor of this node
+	. Repeat until done for each node in the graph
+	. Calculate the final path.
+%
+- What is a cycle on a graph?
+It is e.g. when you have a node A, travel to others and come back to node A.
+%
+- How to get the shortest path on a weighted graph that has cycles?
+That is not possible.
+%
+- What is an undirected graph?
+It is a graph with no direction between 2 nodes, which means they point to each other.
+%
+- Which are the 2 conditions where Dijkstra's algorithm cannot be applied?
+	. Graphs with cycles
+	. Graphs with negative weight
+%
+- How do you implement the Dijkstra's algorithm?
+You can have a table with the name and cost of each node, and a column with the parent of each node. The last value on the "cost" column is always updated. E.g.:
+```
+Parent 		| Node 		| Cost
+A		| B		| 5
+B		| C		| 0
+C		| D		| 30 35
+```
+%
+- Besides being applied to calculate distances, where can Dijkstra's algorithm can also be applied?
+When you need to minimize something. E.g., minimize the amount of money spent to buy different products given a limited amount of money.
+%
+- What effect does graphs with negative weight edges have on the Dijkstra's algorithm?
+They break it. To find the shortest path when you have negative-weighted edges you can use e.g. the Bellman-Ford algorithm.

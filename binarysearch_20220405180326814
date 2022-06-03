@@ -12,25 +12,28 @@ That means that for a list with n elements, you will go through all the list fro
 %
 - What is a logarithm?
 They are the flip of exponentials.
-E.g.
+E.g.:
+```
+###
  3
 2  = 8         == 	log 8 = 3
-                           2
+###
  4
 2  = 16        == 	log 16 = 4
                            2
+###
  5
 2  = 32        == 	log 32 = 5
-                           2
+```                          2
 %
 - Suppose you have a sorted list of 128 names and you're searching using binary search. What's the maximum number of steps it would take?
 7 steps. (see why below)
 ```
  x
 2  = 128, so x = 7
+###
 2 4 8 16 32 64 128 256 (numbers)
-%
-----------------------
+......................
 1 2 3  4  5  6   7   8 (index)
 ```
 %
@@ -39,7 +42,8 @@ E.g.
 ```
  x
 2  = 256, so x = 8
+###
 2 4 8 16 32 64 128 256
-%
-----------------------
+......................
 1 2 3  4  5  6   7   8
+```
